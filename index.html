@@ -27,13 +27,43 @@
 </head>
 
 <body class="sora-font ">
-    <header>
-        <nav>
-            <div>
-                <img src="assest/logo-header.png" alt="">
+    <header class="bg-gradient-to-b from-white via-[#EFEBE3] to-[var(--bg-color)] ">
+        <nav class="container mx-auto mt-4">
+            <div class="navbar ">
+                <div class="navbar-start">
+                    <a ><img class="w-28" src="assest/logo-header.png" alt=""></a>
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content text-[var(--text-color)]bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[var(--text-color)]">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-5 hidden lg:flex">
+                    <img src="assest/search.png" alt="">
+                    <img src="assest/shopping-cart.png" alt="">
+                    <a class="btn border-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white">Login</a>
+                    <a class="btn bg-[var(--primary-color)] text-white hover:border-[var(--primary-color)] hover:text-[var(--primary-color)]
+                    hover:bg-white">Register</a>
+                </div>
             </div>
-            <div></div>
-            <div></div>
         </nav>
 
     </header>
